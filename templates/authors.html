@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Authors</title>
+<style>
+  ul { 
+    padding-left: 0em;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: lightgrey;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 72px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .btn-container {
+    margin-top: 20px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 24px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+  }
+
+  .btn:hover {
+    background-color: #2980b9;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+  }
+
+  .lower-buttons-ctr {
+    margin-top: 20px;
+  }
+
+  .lower-buttons {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .lower-buttons:hover {
+    background-color: #2980b9;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+  }
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">Authors</div>
+    <div>
+        <ul style="list-style: none;">
+            <li>Pranav Civi</li>
+            <li>Guhan Sivakumar</li>
+            <li>Karen Nguyen</li>
+        </ul>
+    </div>
+    <div class="btn-container">
+      <button class="btn" onclick="redirectToLink('https://tunestotickets.pythonanywhere.com/')">Back to Sign In</button>
+    </div>
+  </div>
+  <script>
+    function redirectToLink(auth_url) {
+      window.location.href = auth_url; 
+    }
+  </script>
+</body>
+</html>

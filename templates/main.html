@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles1.css">
+    <title>Concert Display</title>
+</head>
+<body>
+    <ul style="list-style: none;">
+        {% for item in infoList %}
+            <div class="concert">
+                <div class="concert-image">
+                    <img src={{item[1]}} alt="Concert Image" width="400" height="400">
+                </div>
+                <div class="concert-details">
+                    <h1 class="concert-name">{{item[6]}}</h1>
+                    <h3 class="concert-link"><a href={{item[0]}} target="_blank">{{item[0]}}</a> </h3>
+                    <p class="concert-genre">Genre: {{item[5]}}</p>
+                    <p class="concert-date">Date: {{item[2]}}</p>
+                    <p class="concert-price">Price range: ${{item[3]}} to ${{item[4]}}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </ul>
+</body>
+</html>
